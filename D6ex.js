@@ -253,7 +253,10 @@ console.log(howManyDay(dateEx10));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-console.log(matrixGenerator(numRow, numColumn));
+console.log("\n\nesercizio extra 11°\n");
+
+numColumn = 5;
+numRow = 5
 
 const matrixGenerators = (param1, param2) => {
   for (let i = 0; i < param1; i++) {
@@ -271,7 +274,7 @@ const matrixGenerators = (param1, param2) => {
 
 console.log(matrixGenerators(numRow, numColumn));
 
-/* non funziona
+/*non funziona*/
 
 console.log("\n\nesercizio extra 11°\n");
 
@@ -279,18 +282,16 @@ numColumn = 5;
 numRow = 5
 
  const matrixGenerator = (param1, param2) => {
-   let arrColRow = [];
-   let arrRow = [];
-   let rows;
-   let cols;
+   let matrix = [];
    for (let i = 0; i < param1; i++) {
-    rows = String(i);
+    let line = [];
      for (let j = 0; j < param2; j++) {
-        cols = String(j);
-       arrRow[j] = cols + rows;
-       console.log(arrColRow);
+       line[j] = String(i) + String(j);
+      // console.log(matrix);
      }
-     arrColRow[i] = arrRow;
+     matrix[i] = line;
    }
-   return arrColRow;
- }; */
+   return matrix;
+ };
+
+console.log(matrixGenerator(numRow, numColumn));
